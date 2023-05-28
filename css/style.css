@@ -784,26 +784,19 @@ body {
 }
 .modal__check-inner {
   position: relative;
-  padding-left: 24px;
   margin-bottom: 24px;
 }
 .custom__check {
-  position: absolute;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: var(--transition-brd), var(--transition-bgc);
-}
-.custom__check-icon {
+  transition: var(--transition-brd), var(--transition-bgc),
+    var(--transition-fill);
   fill: transparent;
-  transition: var(--transition-fill);
 }
 
 .modal__policy-check:focus + .modal__label .custom__check {
@@ -813,8 +806,6 @@ body {
 .modal__policy-check:checked + .modal__label .custom__check {
   background-color: var(--bgc-custom-check-checked);
   border: none;
-}
-.modal__policy-check:checked + .modal__label .custom__check-icon {
   fill: #ffffff;
 }
 
