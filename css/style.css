@@ -60,6 +60,7 @@
   --bgc-btn: #4d5ae5;
   --bgc-btn-h-f: #404bbf;
   --c-policy: #4d5ae5;
+  --c-check-fill: #ffffff;
   --c-input-label: #8e8f99;
   --c-form-btn: #ffffff;
   --bgc-btn: #4d5ae5;
@@ -67,6 +68,7 @@
   --bgc-custom-check-checked: #404bbf;
   --brd-footer-input-f: #4d5ae5;
   --brd-footer-input: #ffffff;
+  --brd-custom-check-checked: #404bbf;
   --brd-custom-check-f: #404bbf;
   --transition-brd: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-c: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -794,8 +796,6 @@ body {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: var(--transition-brd), var(--transition-bgc),
-    var(--transition-fill);
   fill: transparent;
 }
 
@@ -806,9 +806,9 @@ body {
 .modal__policy-check:checked + .modal__label .custom__check {
   background-color: var(--bgc-custom-check-checked);
   border: none;
-  fill: #ffffff;
+  fill: var(--c-check-fill);
+  border-color: var(--brd-custom-check-checked);
 }
-
 .modal__policy-link {
   color: var(--c-policy);
 }
