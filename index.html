@@ -432,15 +432,15 @@
             <label class="subscribe__label">
               <input
                 class="subscribe__input"
-                name="user_mail"
+                name="user-mail"
                 type="email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button class="subscribe__btn btn">
+            <button class="subscribe__btn btn" type="submit">
               Subscribe
-              <svg class="subscribe__icon" width="24" height="20">
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -448,6 +448,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-close" type="button" data-modal-close>
@@ -460,26 +461,26 @@
             <legend class="modal__title">
               Leave your contacts and we will call you back
             </legend>
-            <label class="modal__label" for="user_name"> Name </label>
+            <label class="modal__label" for="user-name"> Name </label>
             <div class="modal__input-inner">
               <input
                 class="modal__input"
-                id="user_name"
+                id="user-name"
                 type="text"
-                name="user_name"
+                name="user-name"
                 required
               />
               <svg class="modal__input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
-            <label class="modal__label" for="user_tel"> Phone </label>
+            <label class="modal__label" for="user-tel"> Phone </label>
             <div class="modal__input-inner">
               <input
                 class="modal__tel-input modal__input"
-                id="user_tel"
+                id="user-tel"
                 type="tel"
-                name="user_tel"
+                name="user-tel"
                 required
               />
               <svg class="modal__input-icon" width="13" height="13">
@@ -492,7 +493,7 @@
               <input
                 class="modal__mail-input modal__input"
                 type="email"
-                name="user_mail"
+                name="user-mail"
                 required
               />
               <svg
@@ -504,23 +505,23 @@
               </svg>
             </div>
 
-            <label class="modal__label" for="user_comment"> Comment </label>
+            <label class="modal__label" for="user-comment"> Comment </label>
             <textarea
               class="modal__textarea"
-              id="user_comment"
-              name="user_comment"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
 
             <div class="modal__check-inner">
               <input
                 class="modal__policy-check visually-hidden"
-                id="user_accept"
+                id="user-accept"
                 type="checkbox"
-                name="user_accept"
+                name="user-accept"
                 required
               />
-              <label class="modal__policy modal__label" for="user_accept">
+              <label class="modal__policy modal__label" for="user-accept">
                 I accept the terms and conditions of the&nbsp;<a
                   class="modal__policy-link"
                   href=""

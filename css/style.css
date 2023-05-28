@@ -12,7 +12,7 @@
   --color-text-hero-button: #ffffff;
   --color-text-filter-button: #4d5ae5;
   --color-text-filter-button-hover-focus: #ffffff;
-  --color-text-footer-media: #fff;
+  --color-text-footer-media: #ffffff;
   --color-navigation-hover-focus: #404bbf;
   --color-navigation-current: #404bbf;
   --color-contact-hover-focus: #404bbf;
@@ -55,7 +55,7 @@
 
   --modal-input-f: #4d5ae5;
   --modal-textarea-f: #4d5ae5;
-
+  --c-subscribe-text: #ffffff;
   --c-btn: #ffffff;
   --bgc-btn: #4d5ae5;
   --bgc-btn-h-f: #404bbf;
@@ -600,23 +600,26 @@ body {
 
 .subscribe__text {
   margin-bottom: 16px;
-  color: var(--color-text-footer);
+  color: var(--c-subscribe-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.subscribe__label {
+  margin-right: 24px;
+}
 .subscribe__input {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  margin-right: 24px;
+
   display: flex;
   align-items: center;
   background-color: transparent;
   outline: none;
   border: 1px solid var(--brd-footer-input);
-  color: var(--color-text-footer);
+  color: var(--c-subscribe-text);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   font-size: 12px;
@@ -625,7 +628,7 @@ body {
   transition: var(--transition-brd);
 }
 .subscribe__input::placeholder {
-  color: var(--color-text-footer);
+  color: var(--c-subscribe-text);
   opacity: 1;
   font-size: 12px;
   line-height: 1.5;
@@ -636,6 +639,7 @@ body {
 }
 .subscribe__btn {
   padding: 8px 24px;
+  min-width: 165px ;
 }
 .subscribe__icon {
   margin-left: 16px;
